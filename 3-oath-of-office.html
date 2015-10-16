@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Office of Personnel Management - Presidential Onboarding</title>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" src="//normalize-css.googlecode.com/svn/trunk/normalize.min.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+  </head>
+  <body>
+  	<div class="outer-container">
+  		<div class="header">
+        <div class="header-inner">
+          <h2>Office of Personnel Management</h2>
+    			<h1>Taking Office: Final Steps</h1>
+        </div>
+  		</div><!-- .header -->
+  		<div class="main-container">
+  			<div class="content">
+          <ul class="progress-indicator">
+            <!-- unsightly, un-semantic <br> tags added so things display right on mobile, sigh...-->
+            <li class="finished">Emergency <br>Contact</li>
+            <li class="finished">Packing <br>List</li>
+            <li class="active">Oath of <br>Office</li>
+          </ul>
+          <p>The U.S. Constitution requires that you agree to the following oath or affirmation before executing the duties of office (U.S. Const. art. II, &sect; 1):
+          </p>
+          <blockquote>
+            I do solemnly swear (or affirm) that I will faithfully execute the office of President of the United States, and will to the best of my Ability, preserve, protect and defend the Constitution of the United States. 
+          </blockquote>
+          <p>
+            To indicate your agreement, enter your name below. This will serve as your binding signature. 
+          </p>
+          <form onsubmit="javascript:window.location.href='finished.html';return false;">
+            
+            <label for="signature">Signature</label>
+            <input type="text" name="signature" id="signature" class="signature" required autocomplete="off" autocorrect="off">
+            <hr>
+            <div class="button-group">
+              <a class="button" href="2-packing-list.html">Go Back</a>
+              <input type="submit" value="Finish" class="button button-primary">
+            </div><!-- .button-group -->
+          </form>
+          
+  	  	</div><!-- .content -->
+	   </div><!-- .main-container -->
+  </div><!-- .outer-container -->
+
+  </body>
+  </html>

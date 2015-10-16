@@ -1,0 +1,529 @@
+/*  VARIABLES. */
+
+$font: 'Open Sans';
+$header-bg-color: #F33E3E;
+$header-text-color: #fff;
+$page-bg-color: #F8F8F8;
+$main-text-color: #444;
+$main-bg-color: #fff;
+
+$light-text: #999;
+
+$button-bg-color: #efefef;
+$button-text-color: #444;
+$primary-button-bg-color: #0066BF;
+$primary-button-text-color: #fff;
+
+$progress-bg-color: #dedede;
+$progress-text-color: #888;
+$progress-active-bg-color: #444;
+$progress-active-text-color: #fff;
+
+$form-label-text-color: #777;
+$form-labelbutton-text-color: #666;
+$form-labelbutton-bg-color: #f3f3f3;
+$form-labelbutton-active-text-color: #000;
+$form-labelbutton-active-bg-color: #dfdfdf;
+
+$main-width: 736px;
+
+
+
+/*  BUTTONS! */
+
+.button, input.button {
+	margin: 16px 8px 16px 0px;
+	padding: 9px 16px 10px;
+	border-radius: 3px;
+	border: solid 1px darken($button-bg-color, 15%);
+	color: $button-text-color;
+	background-color: $button-bg-color;
+	background: linear-gradient(lighten($button-bg-color, 8%), $button-bg-color);
+	font-family: $font;
+	font-size: 14px;
+	font-weight: 600;
+	text-decoration: none;
+	&:hover {
+		color: darken($button-text-color, 20%);
+		background: linear-gradient(lighten($button-bg-color, 12%), lighten($button-bg-color, 4%));
+	}
+	&.button-primary {
+		padding: 10px 22px 11px;
+		color: $primary-button-text-color;
+		border: none;
+		background-color: $primary-button-bg-color;
+		background: linear-gradient(lighten($primary-button-bg-color, 5%), $primary-button-bg-color);
+		&:hover {
+			background: linear-gradient(lighten($primary-button-bg-color, 9%), lighten($primary-button-bg-color, 4%));
+		}
+	}
+}
+
+
+/**    MAIN STYLES    **/
+
+
+// mobile & up.
+@media only screen { 
+
+	// box model reset
+	html { box-sizing: border-box; }
+	*, *:before, *:after { box-sizing: inherit }
+
+	body {
+		margin: 0;
+		background-color: $page-bg-color;
+		font-family: $font;
+		font-size: 14px;
+		color: $main-text-color;
+	}
+
+	p, ul, li {
+		line-height: 1.4em;
+	}
+
+	h1, h2, h3 {
+		margin: 0;
+		padding: 0; 
+	}
+
+	blockquote {
+		margin: 24px 34px 30px;
+		color: #000;
+		font-size: 16px;
+		font-weight: 600;
+	}
+
+	hr {
+		border: 0;
+		border-top: solid 1px #ddd;
+		margin: 24px 0;
+	}
+
+
+	form {
+		display: block;
+		margin-top: 26px;
+		label {
+			display: block;
+			margin-bottom: 4px;
+			color: $form-label-text-color;
+			font-size: 12px;
+			font-weight: 700;
+		}
+		.label-guide {
+			font-weight: 300;
+			padding-left: 2px;
+			color: $light-text;
+			font-style: italic;
+		}
+		input {
+			margin-right: 5px;
+		}
+		input[type="text"], 
+		input[type="tel"], 
+		input[type="number"],
+		input[type="email"] {
+			height: 32px;
+			padding: 1px 8px;
+			border: solid 1px #bbb;
+			margin-bottom: 14px;
+			font-size: 16px;
+			width: 255px;
+			box-shadow:  inset 1px 1px 3px rgba(0,0,0,.07);
+		}
+		input[type="tel"] {
+			width: 175px;
+		}
+		input.signature {
+			width: 260px;
+			font-size: 18px;
+		}
+		.txt2 {
+			width: 50px!important;
+		}
+		.txt4 {
+			width: 68px!important;
+		}
+		select {
+			height: 34px;
+			width: 150px;
+			font-size: 16px;
+			padding: 2px;
+		}
+	}
+
+	fieldset {
+		margin: 0 0 14px 0;
+		padding: 0;
+		border: none;
+		legend {
+			margin-bottom: 5px;
+			color: $light-text;
+			font-style: italic;
+			font-size: 15px;
+			font-weight: 300;
+		}
+	}
+
+	// styling to give button-like affordances to checkboxes and radio buttons
+	.check-radio-group {
+		position: relative;
+		top: -10px;
+		input {
+			z-index: 10;
+			position: relative; 
+			margin: 0;
+			top: 19px;
+			left: 12px; 
+
+		}
+		label {
+			z-index: 8;
+			position: relative;
+			margin: -7px 0;
+			padding: 8px 12px 9px 34px;
+			border-radius: 4px;
+			width: 244px;
+			color: $form-labelbutton-text-color;
+			background-color: $form-labelbutton-bg-color;
+			font-weight: 500;
+			font-size: 14px;
+			&:hover {
+				color: $form-labelbutton-active-text-color;
+				background-color: $form-labelbutton-active-bg-color!important;
+			}
+		}	
+		input:checked + label {
+				color: $form-labelbutton-active-text-color;
+				background-color: lighten($form-labelbutton-active-bg-color, 3%);
+			}
+	}
+
+	// progress indicator  -- main
+	.progress-indicator {
+		position: relative;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		li {
+			position: relative;
+			z-index: 10;
+			display: inline-block;
+			margin: 10px 14px 0 122px;
+			margin-right: 14px;
+			margin-left: -10px;
+			width: 30%;
+			padding: 6px 0 8px 14px;
+			text-align: center;
+			color: $progress-text-color;
+			background-color: $progress-bg-color;
+			font-size: 12px;
+			line-height: 1.2em;
+			vertical-align: middle;
+			height: 40px;
+			&:first-child {
+				width: 32%;
+				z-index: 12;
+				margin-left: 0;
+				&.finished {
+					padding-left: 18px;
+					background: $progress-bg-color url(../images/fa-check.svg)no-repeat 6px 12px;
+				}
+			}
+			&.finished {
+				padding-left: 24px;
+				background: $progress-bg-color url(../images/fa-check.svg)no-repeat 16px 12px;
+			}
+			&:last-child {
+				z-index: 8;
+				margin-right: 0;
+				padding-left: 8px;
+				// border-right: solid 5px $progress-bg-color;
+				width: 31%;
+				// no right pointer on final item.
+				&:before {
+					border: none;
+				}
+				&:after {
+					border: none;
+				}
+				&.finished {
+					padding-right: 0px;
+					padding-left: 18px;
+					background: $progress-bg-color url(../images/fa-check.svg)no-repeat 16px 12px;
+				}
+			}
+			&:after { // grey end
+				content: '';
+				position: absolute;
+				right: -13px; 
+				top: 0;
+				width: 0;
+				height: 0;
+				border-top: 20px solid transparent;
+				border-left: 13px solid $progress-bg-color;
+				border-bottom: 20px solid transparent;
+			}
+			&:before { // white end
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				top: 0;
+				right: -20px;
+				border-top: 20px solid transparent;
+				border-left: 13px solid $main-bg-color;
+				border-bottom: 20px solid transparent;
+			}
+			// active and finished styles
+			&.active {
+				color: $progress-active-text-color;
+				background-color: $progress-active-bg-color;
+				&:after {
+					border-left-color: $progress-active-bg-color;
+				}
+			}
+			
+		} // li
+	} // .progress-indicator
+
+
+	.header {
+		padding: 20px 10px 12px;
+		color: $header-text-color;
+		background-color: $header-bg-color;
+		h1 {
+			margin: 0 auto;
+			font-size: 18px;
+			
+		}
+		h2 {
+			margin: 0 auto;
+			opacity: .8;
+			font-size: 15px;
+			font-weight: 400;
+		}
+		.header-inner {
+			max-width: $main-width;
+			margin: 0 auto;
+		}
+	}
+
+	.main-container {
+		max-width: $main-width;
+		margin: 0 auto 30px;
+		padding: 4px 14px 24px;
+		background-color: $main-bg-color;
+	}
+
+	.button-group {
+		width: 100%;
+		margin: 8px 0 20px;
+		text-align: right;
+		&.single {
+			margin-top: 56px;
+			margin-bottom: 24px;
+			text-align: center;
+		}
+	}
+	.content {
+		clear: both;
+		padding: 0;
+		.banner {
+			margin-top: 0;
+			font-size: 19px;
+			font-weight: 700;
+		}
+		.banner-img {
+			height: 210px;
+			text-align: center;
+			img {
+				margin-top: 12px;
+				display: none;
+			}
+		}
+		.text-after {
+			opacity: 0;
+		}
+		li {
+			margin-bottom: 8px;
+		}
+	}
+
+} // end small
+
+
+// -med-small intermediate //
+@media only screen and (min-width: 31em) { 
+
+	.progress-indicator li {
+		padding-top: 12px;
+		font-size: 13px;
+		&.finished {
+			width: 30%;
+			padding-left: 24px;
+			background: $progress-bg-color url(../images/fa-check.svg)no-repeat 20px 12px;
+		}
+		&:first-child {
+			&.finished {
+				width: 35%;
+				padding-left: 26px;
+				background: $progress-bg-color url(../images/fa-check.svg)no-repeat 10px 12px;
+			}
+		}
+		&:last-child {
+			&.finished {
+				width: 31%;
+				padding-left: 24px;
+				background: $progress-bg-color url(../images/fa-check.svg)no-repeat 17px 12px;
+			}
+		}
+		br {
+			display: none;
+		}
+	}
+	.header {
+		padding-left: 30px;
+	}
+	.content {
+		padding: 12px 15px;
+	}
+}
+
+// - medium. - // 
+@media only screen and (min-width: 40.0625em) { 
+
+	.header {
+		padding-left: 12px;
+		h1 {
+		}
+		h2 {
+			float: right;
+			padding-top: 3px;
+		}
+	} //.header
+ 
+	// progress indicator  -- medium screen adjustments
+	.progress-indicator {
+		li {
+			margin-bottom: 18px;
+			padding: 9px 12px 0 14px;
+			width: 31%;
+			height: 35px;
+			font-size: 13px;
+			font-weight: 600;
+			&.finished {
+				padding-left: 32px;
+				background: $progress-bg-color url(../images/fa-check.svg)no-repeat 28px 10px;
+			}
+			&:first-child {
+				width: 34%;
+				&.finished {
+					padding-left: 28px;
+					background: $progress-bg-color url(../images/fa-check.svg)no-repeat 16px 10px;
+				}
+			}
+			&:last-child {
+				width: 31%;
+				&.finished {
+					padding-left: 24px;
+					background: $progress-bg-color url(../images/fa-check.svg)no-repeat 26px 10px;
+				}
+			}
+			&:after { // grey end
+				border-top: 18px solid transparent;
+				border-left: 13px solid $progress-bg-color;
+				border-bottom: 18px solid transparent;
+			}
+			&:before { // white end
+				right: -20px;
+				border-top: 18px solid transparent;
+				border-left: 13px solid $main-bg-color;
+				border-bottom: 18px solid transparent;
+			}
+			// active and finished styles
+			&.active {
+			}
+		
+		} // li
+	} // .progress-indicator
+
+	.main-container {
+		padding: 14px 48px 18px;
+		box-shadow: -1px 1px 3px 3px rgba(0, 0, 0, 0.03);
+	}
+
+	.button-group {
+		margin: 16px 0 2px;
+	}
+
+} // end medium
+
+
+
+/*----  L a r g e  ----*/
+@media only screen and (min-width: 55em) { // large
+
+	.header {
+		height: 145px;
+		padding-left: 12px;
+		h1 {
+			margin-top: 28px;
+		}
+		h2 {
+			padding-right: 2px;
+	//		margin-top: 80px;
+		}
+	}
+
+	// progress indicator  -- large screen adjustments
+	.progress-indicator {
+		li {
+		} // li
+	} // .progress-indicator
+
+	.main-container {
+		padding: 32px 42px 30px;
+		margin-top: -67px;
+	} // .main-container
+
+	.progress-indicator {
+		margin: 0 auto 18px; li {
+			margin-top: 0;
+		}
+		li {
+			&.finished {
+//				padding-left: 32px;
+				background: $progress-bg-color url(../images/fa-check.svg)no-repeat 40px 10px;
+			}
+			&:first-child {
+				width: 34%;
+				&.finished {
+					padding-left: 28px;
+					background: $progress-bg-color url(../images/fa-check.svg)no-repeat 30px 10px;
+				}
+			}
+			&:last-child {
+				width: 31%;
+				&.finished {
+					padding-left: 24px;
+					background: $progress-bg-color url(../images/fa-check.svg)no-repeat 38px 10px;
+				}
+			}
+		}
+	}
+
+	.content {
+		padding-top: 0;
+		p, ul, li {
+			font-size: 14px;
+		}
+		&.intro {
+			padding: 16px 42px 18px;
+			p, ul, li {
+				font-size: 15px;
+			}
+		}
+	}
+} // end large

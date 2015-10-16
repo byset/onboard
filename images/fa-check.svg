@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="18px" height="15px" viewBox="0 0 18 15" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12072) - http://www.bohemiancoding.com/sketch -->
+    <title>fa-check</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="visual-design-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="fa-check" sketch:type="MSLayerGroup" transform="translate(-1.000000, -2.000000)" fill="#3D9970">
+            <path d="M7.63971653,15.8073949 C7.8353966,16.0030749 8.09047954,16.100915 8.38487321,16.100915 C8.67926689,16.100915 8.93347626,16.0030749 9.1300299,15.8073949 L18.5418917,6.39553309 C18.7375717,6.17976088 18.8354118,5.94477008 18.8354118,5.65037641 C18.8354118,5.35598274 18.7375717,5.1008998 18.5418917,4.90521973 L17.0515783,3.41490637 C16.8550247,3.19913415 16.6008153,3.10129412 16.3064216,3.10129412 C16.0120279,3.10129412 15.756945,3.19913415 15.5612649,3.41490637 L8.38487321,10.5912981 L5.16925569,7.37568057 C4.97270205,7.15990835 4.71849268,7.06206832 4.42409901,7.06206832 C4.12970534,7.06206832 3.8746224,7.15990835 3.67894233,7.37568057 L2.18862897,8.86599393 C1.9929489,9.061674 1.89423529,9.31675694 1.89423529,9.61115062 C1.89423529,9.90554429 1.9929489,10.1405351 2.18862897,10.3563073 L7.63971653,15.8073949 Z" id="Fill-112" sketch:type="MSShapeGroup"></path>
+        </g>
+    </g>
+</svg>
