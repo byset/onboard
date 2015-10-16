@@ -1,10 +1,12 @@
 # Onboarding exercise
 
-This is a "product design challenge" I was assigned. The idea was to create a simple onboarding flow for the President of the United States.
+This is a UI design and coding challenge I was assigned as a design exercise. The idea was to create a simple onboarding flow for the U.S. Presidency.
+
+The live version can be viewed here: http://nuge.co/onboard
 
 Here was the basic assignment, paraphrased: 
 
-> Your task is to create an onboarding flow, in HTML/CSS, for the President of the United States. It should include the basic elements below. Among the goals of the project are simplicity of design and clarity of communication. 
+> Your task is to create an onboarding flow, in HTML/CSS, for the President. It should include the basic elements below. Among the goals of the project are simplicity of design and clarity of communication. 
 
 
 * Fill out emergency contact information
@@ -24,3 +26,7 @@ Here was the basic assignment, paraphrased:
   - [ ] Sour Patch Kids (Office Supplies)
   - [ ] Business Socks x20 (Clothing)
 * Finished
+
+This repo includes a wireframe, onboard-wireframe.pdf. 
+
+My solution is responsive and should work fine on most devices. 
