@@ -1,6 +1,6 @@
 # Onboarding exercise
 
-This is my solution to a UI design and coding exercise.  
+This is my solution to a UI design and coding exercise. (I got the job, so apparently this was judged to be a good solution!)
 
 My solution is responsive and should work fine on most devices. 
 
